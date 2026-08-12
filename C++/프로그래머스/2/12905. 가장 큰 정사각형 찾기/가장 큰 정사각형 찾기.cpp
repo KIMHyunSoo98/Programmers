@@ -17,11 +17,6 @@ int solution(vector<vector<int>> board)
         }
     }
     
-    // for (auto& r: dp){
-    //     for (auto& c : r)
-    //         cout << c << " ";
-    //     cout << endl;
-    // }
     
     for (auto& row: dp){
         ans = max(ans, *max_element(row.begin(), row.end()));
