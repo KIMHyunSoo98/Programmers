@@ -1,2 +1,1 @@
-# Programmers
-Python
+# Programmers 문제풀이 기록
