@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 int find(vector<int>& parents, int v){
     if (v != parents[v])
         parents[v] = find(parents, parents[v]);
@@ -31,13 +32,8 @@ int solution(int n, vector<vector<int>> costs) {
     for (int i=0; i < n; i++)
         parents.push_back(i);
     
-    sort(costs.begin(), costs.end(), [](const vector<int> a, const vector<int> b){
-        if (a[2] < b[2])
-            return true;
-        else if (a[2] > b[2])
-            return false;
-        else
-            return a < b;
+    sort(costs.begin(), costs.end(), [](const vector<int>& a, const vector<int>& b){
+        return a[2] < b[2];
     });
     
     for (auto& cost: costs){
