@@ -1,6 +1,6 @@
 # [level 4] 단어 퍼즐 - 12983 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12983?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12983) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 09월 04일 19:21:30
+2026년 09월 04일 19:22:07
 
 ### 문제 설명
 
