@@ -1,15 +1,5 @@
 from collections import defaultdict, deque
-
-
-def permutation(li, n, cur_path=[], result=[]):    
-    if (len(cur_path) == n):
-        result.append(cur_path)
-        return
-    
-    for i in range(len(li)):
-        permutation(li, n, cur_path + [li[i]], result)
-    
-    return result
+import itertools
         
 
 def bfs(tree, queue, open_type):
@@ -41,7 +31,7 @@ def solution(n, infection, edges, k):
     
     # print(tree)
     
-    for order_types in permutation([1,2,3], k):
+    for order_types in itertools.product([1,2,3], repeat=k):
         # print('order_types', order_types)
         queue = deque([infection])
         # visited = set()
